@@ -1,0 +1,226 @@
+
+/** grilla adaptativa CSS **/
+* {box-sizing: border-box;}
+
+.row::after {content: ""; clear: both; display: table;}
+.row:{ width:100% }
+[class*="col-"] {float: left;}
+
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+
+  Body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "alegreya";
+  }
+
+  h1{text-align: center;}
+
+
+  .caja1{
+    background-color: gray;
+    width: 450px;
+    height: 200px;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: 2px solid black;
+    position: relative;
+    display: inline;
+  }
+
+   .caja2{
+    background-color: gray;
+    width: 450px;
+    height: 200px;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: 2px solid black;
+    position: relative;
+    display: inline;
+  }
+  
+   .caja3{
+    background-color: gray;
+    width: 450px;
+    height: 200px;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 40px;
+    margin-top: 15px;
+    border: 2px solid black;
+    position: relative;
+    display: inline;
+  }
+
+#caja4{
+  background-color: salmon;
+  width: 90px;
+  height: 20px;
+  top: -15px;
+  left: 350px;
+  border: 2px solid black;
+  Position: absolute;
+  text-align: center;
+}
+
+#caja5{
+  background-color: red;
+  width: 90px;
+  height: 20px;
+  top: -15px;
+  left: 350px;
+  border: 2px solid black;
+  Position: absolute;
+  text-align: center;
+}
+
+#caja6{
+  background-color: lightyellow;
+  width: 90px;
+  height: 20px;
+  top: -15px;
+  left: 350px;
+  border: 2px solid black;
+  Position: absolute;
+  text-align: center;
+}
+
+
+
+/* MEDIA QUERIES*/
+@media only screen (min-width: 1200px)
+   {
+    [class*="col-"] {
+      width: 100%;
+    }
+
+  }
+
+  /* MEDIA QUERIES TABLETA*/
+@media only screen and (min-width: 768px) and (max-width: 991px)
+   {
+    [class*="col-"] {
+      width: 100%;
+    }
+
+
+    .caja1 {
+      width: 40%;
+      height: 300px;
+      margin-left: 50px;
+      position: relative;
+    }
+    .caja2{
+      width: 40%;
+      height: 300px;
+      margin-left: 50px;
+      position: relative;
+    }
+
+    .caja3{
+      width: 88.8%;
+      margin-left: 50px;
+      padding-right: 10px;
+      position: relative;
+      position right: 70px;
+    }
+
+    #caja4 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 215px;
+    }
+
+    #caja5 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 215px;
+    }
+
+     #caja6 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 590px;
+    }
+  }
+
+/* MEDIA QUERIES CELULARES*/
+@media only screen (min-width: 767px)
+   {
+    [class*="col-"] {
+      width: 100%;
+    }
+
+ 
+    .caja1 {
+      margin-left: 150px;
+      width: 40%;
+      height: 300px;
+      position: relative;
+    }
+    .caja2{
+      width: 40%;
+      height: 300px;
+      margin-left: 150px;
+      position: relative;
+    }
+
+    .caja3{
+      width: 88.8%;
+      margin: 0;
+      padding-right: 10px;
+      position: relative;
+      position right: 70px;
+    }
+
+    #caja4 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 215px;
+    }
+
+    #caja5 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 215px;
+    }
+
+     #caja6 {
+      width: 90px;
+      height: 20px;
+      position: absolute;
+      top: -15px;
+      left: 590px;
+    }
+  }
